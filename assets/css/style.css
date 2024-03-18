@@ -42,6 +42,7 @@ h1, h2, h3, h4, h5, h6
     display: inline-block;
     float: left;
     padding-top: 2px;
+    cursor: pointer;
 }
 
 .time-now 
@@ -53,6 +54,7 @@ h1, h2, h3, h4, h5, h6
     margin-left: 20px;
     padding-left: 15px;
     float: left;
+    border-left: 1px solid #e5e5e5;
 }
 
 .top-header .time-now.weather-day 
@@ -98,9 +100,13 @@ h1, h2, h3, h4, h5, h6
     font-size: 14px;
     color: #757575;
     display: inline-block;
-    border-left: 1px solid #e5e5e5;
     padding: 0 20px 0 20px;
     left: 11px;
+}
+
+.evne
+{
+    border-left: 1px solid #e5e5e5;
 }
 
 .right 
@@ -129,4 +135,40 @@ i
 .login, .bell 
 {
     padding-left: 20px;
+}
+
+.main-nav
+{
+    width: 100%;
+    float: left;
+    clear: both;
+    font-size: 14px;
+    overflow: hidden;
+    border-bottom: 1px solid #e5e5e5;
+}
+
+.parent
+{
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    max-width: 1440px;
+    margin: 0 auto;
+    padding: 0 15px;
+    display: flex;
+}
+
+.parent li
+{
+    margin-right: 12px;
+    position: relative;
+    font-weight: 400;
+    color: #222;
+    padding: 20px 0 20px 0;
+    cursor: pointer;
+}
+
+ul, li 
+{
+    list-style-type: none;
 }
